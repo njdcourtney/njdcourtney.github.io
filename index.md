@@ -3,5 +3,5 @@ layout: default
 title: NathanCourtney.me.uk
 ---
 
-Hello World, this is a placeholder for Nathan's website.
+<p>Hello World, this is a placeholder for Nathan's website.</p>
 
