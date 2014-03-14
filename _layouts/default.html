@@ -31,28 +31,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<!-- /Nothing to show yet - put links in here -->
+				<ul class="nav navbar-nav">
+			        <li><a href="/blog.html">Blog</a></li>
+			        <li><a href="/credits.html">Credits</a></li>
+				</ul>
             </div><!-- /.navbar-collapse -->
         </nav>
-                
+        
+		<div class="container-fluid">
+	        {{ content }}                   
+		</div>
+		
+	{% include google_responsive.html %}
 
-
-        <div class="container-fluid">
-
-            {{ content }}                   
-
-			<div class="row">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- responsive ad unit -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-7601217689623301"
-                    data-ad-slot="8047603087"
-                    data-ad-format="auto"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-			</div>
-        </div>
     </body>
 </html>
 
