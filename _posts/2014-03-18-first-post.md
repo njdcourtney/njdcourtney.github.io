@@ -1,7 +1,7 @@
 ---
-layout: post
-tags: programming
+layout: default
 title: First Post!
+tags: programming
 ---
 
 What to put as the first post?

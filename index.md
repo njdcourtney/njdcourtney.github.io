@@ -1,8 +1,7 @@
 ---
 layout: default
+title: NathanCourtney.me.uk
 ---
-
-<div class="jumbotron"><h1 class="text-center">NathanCourtney.me.uk</h1></div>
 
 This site came about because I got fed up with posting things on other social media sits; like Facebook, Twitter, Google+ and all the rest and then not being able to find anything again. I wanted to 
 

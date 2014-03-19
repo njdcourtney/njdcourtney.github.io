@@ -1,8 +1,7 @@
 ---
 layout: default
+title: Credits
 ---
-
-#Credits
 
 I'm a big fan of open-source software and I like to give credit where it's due.
 

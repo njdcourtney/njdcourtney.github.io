@@ -1,8 +1,7 @@
 ---
 layout: default
+title: Nathan's Blog
 ---
-
-#Nathan's Blog
 
 ##Recent Posts:
 
