@@ -3,9 +3,9 @@ layout: default
 title: Nathan's Blog
 ---
 
-##Recent Posts:
+##Recent posts:
 
 {% for post in site.posts %}
 ### [ {{ post.title }} ]( {{ post.url }} )
-{{ post.excerpt }}
+{{ post.excerpt }} [(more)]({{ post.url }})
 {% endfor %}

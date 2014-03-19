@@ -5,10 +5,16 @@
 		<div><h1>{{ site.name }}</h1></div>
 		{% include navbar.html %}
 		<div class="container-fluid">
-			<h1 class="text-center">{{ page.title }}</h1>
-			{{ content }}			
+			<div class="row">
+				<div class="col-sm-8">
+					<h1 class="text-center">{{ page.title }}</h1>
+					{{ content }}
+				</div>
+				<div class="col-sm-4">
+					{% include recent-posts.html %}
+				</div>
+			</div>
 		</div>
 		{% include google_responsive.html %}
     </body>
 </html>
-
