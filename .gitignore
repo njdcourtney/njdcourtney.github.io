@@ -1,1 +1,6 @@
+#Ignore the locally generated site
 _site/
+
+#Ignore the RVM ruby version switching instructions as these are machine specific
+.ruby-gemset
+.ruby-version

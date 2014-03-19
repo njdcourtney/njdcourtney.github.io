@@ -1,3 +1,4 @@
 name: nathancourtney.me.uk
+theme: spacelab
 markdown: redcarpet
 pygments: true
