@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Convert single items to arrays
+title: Ruby - convert single items to arrays
 tags: programming, ruby
 ---
 
-This is one of those, "I keep losing this snippet, so I'm going to write it down" posts.
-
-In Ruby, I often find myself writing methods that take Arrays to Emunerate over. There's a neat trick you can do using the Splat operator to convert a single item into an Array.
+In Ruby, I often find myself writing methods that take Arrays to Emunerate over. There's a neat trick you can do using the Splat operator to convert a single item into an Array. This is one of those, "I keep losing this snippet, so I'm going to write it down" posts.
 
 <pre>
 # [*items] converts a single object into an array with that single object
