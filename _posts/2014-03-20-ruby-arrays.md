@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title: Ruby - convert single items to arrays
 tags: programming, ruby
 ---
