@@ -30,6 +30,6 @@ This is the easy bit, do nothing. Ok, its maybe not quite that easy, by doing no
 
 Don't get me wrong, despite the highly preachy nature of this article, I'm not going to tell anybody what they can or can't read. If you want to read the Daily Mail then go ahead, just be aware of the consequences of your actions.
 
-Rant over. I’ll leave you with this piece of comedy genius, the Daily Mail song by Dan & Dan:
+Rant over. I’ll leave you with this piece of comedy genius, the Daily Mail song by Dan and Dan:
 
 <iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/5eBT6OSr1TI?list=FL2-Ffh1Cleb71Phs1U2lh1g" frameborder="0" allowfullscreen></iframe>
