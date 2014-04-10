@@ -4,11 +4,15 @@ title: Why you shouldn't read the Daily Mail
 tags: opinion
 ---
 
+{% include responsive-youtube.html %}
+
 ###So what’s the problem with the Daily Mail?
 
 It is my considered opinion that the Daily Mail is a horrible rag and the sooner it disappears the better, I think that's suitably set the tone for this post. It's not just me who holds this opinion, here's Martin Robbins: Why The Daily Mail is Evil (some swearing if you're at work) which makes the point much better than I ever could:
 
+<div class="video-container">
 <iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/r9dqNTTdYKY" frameborder="0" allowfullscreen></iframe>
+</div>
 
 This is my attempt to convince people that they should stop reading the Daily Mail, or if not to stop then at the very least to realise the consequences of their actions.
 
@@ -32,4 +36,6 @@ Don't get me wrong, despite the highly preachy nature of this article, I'm not g
 
 Rant over. I’ll leave you with this piece of comedy genius, the Daily Mail song by Dan and Dan:
 
+<div class="video-container">
 <iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/5eBT6OSr1TI?list=FL2-Ffh1Cleb71Phs1U2lh1g" frameborder="0" allowfullscreen></iframe>
+</div>
