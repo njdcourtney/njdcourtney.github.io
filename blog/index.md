@@ -8,4 +8,5 @@ title: Nathan's Blog
 {% for post in site.posts %}
 ### [ {{ post.title }} ]( {{ post.url }} )
 {{ post.excerpt }} [(more)]({{ post.url }})
+***
 {% endfor %}

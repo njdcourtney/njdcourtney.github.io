@@ -37,5 +37,5 @@ Don't get me wrong, despite the highly preachy nature of this article, I'm not g
 Rant over. I’ll leave you with this piece of comedy genius, the Daily Mail song by Dan and Dan:
 
 <div class="video-container">
-<iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/5eBT6OSr1TI?list=FL2-Ffh1Cleb71Phs1U2lh1g" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/5eBT6OSr1TI" frameborder="0" allowfullscreen></iframe>
 </div>
