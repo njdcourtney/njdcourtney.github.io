@@ -1,4 +1,7 @@
-name: Nathan Courtney
 theme: flatly
 markdown: redcarpet
 pygments: true
+
+title: Nathan Courtney
+production_url : http://www.nathancourtney.me.uk
+rss_path : /rss.xml
