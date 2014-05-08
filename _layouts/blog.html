@@ -9,13 +9,19 @@
 				<div class="col-sm-8">
 					<h1 class="text-center">{{ page.title }}</h1>
 					<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
+					<div class-"row">
+						<div class="col-xs-6">
+							{% if page.previous %}
+								<p class="text-left"><a href="{{ page.previous.url }}">< {{ page.previous.title }}</a></p>
+							{% endif %}
+						</div>
+						<div class="col-xs-6">
+							{% if page.next %}
+								<p class="text-right"><a href="{{ page.next.url }}">{{ page.next.title }} ></a></p>
+							{% endif %}
+						</div>
+					</div>
 					{{ content }}
-					{% if page.previous %}
-						<p class="pull-left"><a href="{{ page.previous.url }}">< {{ page.previous.title }}</a></p>
-					{% endif %}
-					{% if page.next %}
-						<p class="pull-right"><a href="{{ page.next.url }}">{{ page.next.title }} ></a></p>
-					{% endif %}
 					{% include discus.html %}
 				</div>
 				<div class="col-sm-4">
@@ -24,5 +30,6 @@
 			</div>
 		</div>
 		{% include google_responsive.html %}
+		{% include google-analytics.html %}
     </body>
 </html>
