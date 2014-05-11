@@ -1,4 +1,4 @@
-theme: flatly
+theme: spacelab
 markdown: redcarpet
 pygments: true
 
