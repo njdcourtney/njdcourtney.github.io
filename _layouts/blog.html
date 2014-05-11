@@ -10,16 +10,20 @@
 					<h1 class="text-center">{{ page.title }}</h1>
 					<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
 					<div class-"row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 text-left"><p>
 							{% if page.previous %}
-								<p class="text-left"><a href="{{ page.previous.url }}">< {{ page.previous.title }}</a></p>
+								<a href="{{ page.previous.url }}">< {{ page.previous.title }}</a>
+							{% else %}
+								&nbsp;
 							{% endif %}
-						</div>
-						<div class="col-xs-6">
+						</p></div>
+						<div class="col-xs-6 text-right"><p>
 							{% if page.next %}
-								<p class="text-right"><a href="{{ page.next.url }}">{{ page.next.title }} ></a></p>
+								<a href="{{ page.next.url }}">{{ page.next.title }} ></a>
+							{% else %}
+								&nbsp;
 							{% endif %}
-						</div>
+						</p></div>
 					</div>
 					{{ content }}
 					{% include discus.html %}
