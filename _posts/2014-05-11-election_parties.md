@@ -21,7 +21,11 @@ References presented, here's the list of parties who're standing in my region:
 * Liberal Democrats - <http://www.libdems.org.uk/in_europe>
 * NO2EU <http://www.no2eu.com/>
 * UK Independence Party (UKIP) <http://www.ukip.org/>
-* Yorkshire First - <http://www.yorkshirefirst.org.uk/>The first thing that stands out is how many parties are standing on an anti-european ticket. By my crude classification, 6 of the 10 parties are overtly anti-european or at least euro-sceptic, 2 are neutral and 2 are pro-european.
-That's a lot of anti-european sentiment. These aren't just people spouting down the pub or in the comments section of the Daily Mail, these are people who're committed enough to get organised, fill out the requisite forms and raise the £5000 deposit it takes to stand for election.
+* Yorkshire First - <http://www.yorkshirefirst.org.uk/>The first thing that stands out is how many parties are standing on an anti-European ticket. By my crude classification, 6 of the 10 parties are overtly anti-European or at least euro-sceptic, 2 are neutral and 2 are pro-European.
+That's a lot of anti-European sentiment. These aren't just people spouting down the pub or in the comments section of the Daily Mail, these are people who're committed enough to get organised, fill out the requisite forms and raise the £5000 deposit it takes to stand for election.
 It's starting to feel like the last round of European elections when the BNP surprised everybody with their electoral success (<http://news.bbc.co.uk/1/hi/8088381.stm>), which many commentators at the time put down to the lack of debate by the mainstream parties about the effect of the European Union on people's lives and all the related issues around immigration. This lack of debate was thought to be driving people to the BNP as the only party at the time talking about those issues, however distastefully.
 The main parties don't seem to have learnt their lesson as they still don't seem to be interested in having that debate. For better or worse, if the mainstream parties aren't interested in talking about an issue that sections of the population care about those people will, regardless of any other idiocy in their manifesto, go and find the ones that are. It's looking like we're seeing this happening again, this time with UKIP taking the place of the BNP.
+
+###Edit 12th May
+
+In my first pass, I had the Greens down as pro-European, but in digging further it turns out that while they're pro-European as a concept, they're pretty much against the European Union as it's constituted now. Moving them from pro to con makes that 7 out of 10 parties campaigning against the current EU.
