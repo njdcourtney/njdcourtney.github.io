@@ -3,10 +3,38 @@ layout: default
 title: Blog Index
 ---
 
+<!-- This loops through the paginated posts -->
 <dl>
-    {% for post in site.posts %}
-        <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
-        <dd>{{ post.excerpt }}</dd>
-    {% endfor %}
+{% for post in paginator.posts %}
+    <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+    <dd>{{ post.excerpt }}</dd>
+{% endfor %}
 </dl>
 
+{% if paginator.total_pages > 1 %}
+<div class="text-center">
+    <ul class="pagination">
+    {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="glyphicon glyphicon-step-backward"></span> </a></li>
+    {% else %}
+        <li class="disabled"><span class="glyphicon glyphicon-step-backward"></span></li>
+    {% endif %}
+    
+    {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+            <li class="active"><a href="#">{{ page }} <span class="sr-only">(current)</span></a></li>
+        {% elsif page == 1 %}
+            <li><a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+        {% else %}
+            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        {% endif %}
+    {% endfor %}
+    
+    {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="glyphicon glyphicon-step-forward"></span> </a></li>
+    {% else %}
+        <li class="disabled"><span class="glyphicon glyphicon-step-forward"></span></li>
+    {% endif %}
+    </ul>
+</div>
+{% endif %}
