@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Nathan's Blog
+title: Blog Index
 ---
 
-<h2>Recent posts:</h2>
-
-{% for post in site.posts %}
-<h3> <a href="{{ post.url }}">{{ post.title }}</a></h3>
-{{ post.excerpt }}
-<hr>
-{% endfor %}
+<dl>
+    {% for post in site.posts %}
+        <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+        <dd>{{ post.excerpt }}</dd>
+    {% endfor %}
+</dl>
 
