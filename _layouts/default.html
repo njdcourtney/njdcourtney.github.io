@@ -2,13 +2,14 @@
 <html>
 	{% include head.html %}
     <body>
-		<h1>{{ site.title }}</h1>
 		{% include navbar.html %}
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-					<h1 class="text-center">{{ page.title }}</h1>
-					{{ content }}
+					<div class="container-fluid">
+						<h1 class="text-center">{{ page.title }}</h1>
+						{{ content }}
+					</div>
 				</div>
 				<div class="col-sm-4">
 					{% include recent-posts.html %}
@@ -16,6 +17,6 @@
 			</div>
 		</div>
 		{% include google_responsive.html %}
-        {% include google-analytics.html %}
+		{% include google-analytics.html %}
     </body>
 </html>

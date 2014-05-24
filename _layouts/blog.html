@@ -2,31 +2,25 @@
 <html>
 	{% include head.html %}
     <body>
-		<h1>{{ site.title }}</h1>
 		{% include navbar.html %}
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-					<h1 class="text-center">{{ page.title }}</h1>
-					<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
-					<div class-"row">
-						<div class="col-xs-6 text-left"><p>
+					<div class="container-fluid">
+						<h1 class="text-center">{{ page.title }}</h1>
+						<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
+						{{ content }}
+						
+						<ul class="pager">
 							{% if page.previous %}
-								<a href="{{ page.previous.url }}">< {{ page.previous.title }}</a>
-							{% else %}
-								&nbsp;
+								<li class="previous"><a href="{{ page.previous.url }}"><span class="glyphicon glyphicon-step-backward"></span> Previous</a></li>
 							{% endif %}
-						</p></div>
-						<div class="col-xs-6 text-right"><p>
 							{% if page.next %}
-								<a href="{{ page.next.url }}">{{ page.next.title }} ></a>
-							{% else %}
-								&nbsp;
+							  <li class="next"><a href="{{ page.next.url }}">Next <span class="glyphicon glyphicon-step-forward"></span></a></li>
 							{% endif %}
-						</p></div>
+						</ul>
+						{% include discus.html %}
 					</div>
-					{{ content }}
-					{% include discus.html %}
 				</div>
 				<div class="col-sm-4">
 					{% include recent-posts.html %}
