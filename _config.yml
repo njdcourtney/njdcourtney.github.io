@@ -1,4 +1,4 @@
-theme: spacelab
+theme: cerulean
 markdown: redcarpet
 pygments: true
 
