@@ -5,11 +5,18 @@
 		{% include navbar.html %}
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-8">
-					<div class="container-fluid">
-						<div class="page-header text-center">
-							<h1>{{ page.title }}</h1>
-						</div>
+				<div class="container-fluid">
+					<div class="page-header text-center">
+						<h1>{{ page.title }}</h1>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						{% include recent-posts.html %}
+					</div>
+					<div class="col-sm-8">
 						<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
 						{{ content }}
 						
@@ -24,13 +31,9 @@
 						{% include discus.html %}
 					</div>
 				</div>
-				<div class="col-sm-4">
-					{% include recent-posts.html %}
-					{% include google-search.html %}
-				</div>
 			</div>
-		</div>
 		{% include google_responsive.html %}
+		</div>
 		{% include google-analytics.html %}
     </body>
 </html>

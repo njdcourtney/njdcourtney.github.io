@@ -1,12 +1,6 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Recent Blog Posts <a href="/rss.xml"><img src="/feed-icon-14x14.png" height=14 width=14 alt="RSS feed"></a></h3>
-  </div>
-  <div class="panel-body">
-	<ul>
-    {% for post in (site.posts limit:paginator.per_page %}
+<h2>Recent Blog Posts <a href="/rss.xml"><img src="/feed-icon-14x14.png" height=14 width=14 alt="RSS feed"></a></h2>    
+<ul>
+	{% for post in (site.posts limit: site.recent_limit %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}    
-    </ul>
-  </div>
-</div>
+</ul>
