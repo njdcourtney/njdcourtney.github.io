@@ -13,10 +13,7 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-4">
-						{% include recent-posts.html %}
-					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-9 col-sm-push-3">
 						<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
 						{{ content }}
 						
@@ -29,6 +26,9 @@
 							{% endif %}
 						</ul>
 						{% include discus.html %}
+					</div>
+					<div class="col-sm-3 col-sm-pull-9">
+						{% include recent-posts.html %}
 					</div>
 				</div>
 			</div>
