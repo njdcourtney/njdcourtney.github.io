@@ -1,4 +1,4 @@
-theme: paper
+theme: sandstone
 markdown: redcarpet
 pygments: true
 
