@@ -1,4 +1,4 @@
-theme: cerulean
+theme: paper
 markdown: redcarpet
 pygments: true
 
