@@ -3,37 +3,31 @@
 	{% include head.html %}
     <body>
 		{% include navbar.html %}
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="container-fluid">
+				<div class="col-md-8">
 					<div class="page-header text-center">
 						<h1>{{ page.title }}</h1>
 					</div>
-				</div>
-			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-9 col-sm-push-3">
-						<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
-						{{ content }}
+					<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
+					{{ content }}
 						
-						<ul class="pager">
-							{% if page.previous %}
-								<li class="previous"><a href="{{ page.previous.url }}"><span class="glyphicon glyphicon-step-backward"></span> Previous</a></li>
-							{% endif %}
-							{% if page.next %}
-							  <li class="next"><a href="{{ page.next.url }}">Next <span class="glyphicon glyphicon-step-forward"></span></a></li>
-							{% endif %}
-						</ul>
-						{% include discus.html %}
-					</div>
-					<div class="col-sm-3 col-sm-pull-9">
-						{% include recent-posts.html %}
-					</div>
+					<ul class="pager">
+						{% if page.previous %}
+							<li class="previous"><a href="{{ page.previous.url }}"><span class="glyphicon glyphicon-step-backward"></span> Previous</a></li>
+						{% endif %}
+						{% if page.next %}
+							<li class="next"><a href="{{ page.next.url }}">Next <span class="glyphicon glyphicon-step-forward"></span></a></li>
+						{% endif %}
+					</ul>
+					{% include discus.html %}
+				</div>
+				<div class="col-md-4">
+					<div class="well">{% include recent-posts.html %}</div>
 				</div>
 			</div>
 		{% include google_responsive.html %}
-		</div>
+		</div><!--/.container -->
 		{% include google-analytics.html %}
 		{% include tail.html %}
     </body>

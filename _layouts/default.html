@@ -3,25 +3,14 @@
 	{% include head.html %}
     <body>
 		{% include navbar.html %}
-		<div class="container-fluid">
-			<div class="row">
-				<div class="container-fluid">
-					<div class="page-header text-center">
-						<h1>{{ page.title }}</h1>
-					</div>
-				</div>
+		<div class="container">
+			<div class="page-header text-center">
+				<h1>{{ page.title }}</h1>
 			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-3">
-						{% include recent-posts.html %}
-					</div>
-					<div class="col-sm-9">
-						{{ content }}
-					</div>
-				</div>
-			</div>
-		{% include google_responsive.html %}
+		</div>
+		<div class="container">
+			{{ content }}
+			{% include google_responsive.html %}
 		</div>
 		{% include google-analytics.html %}
 		{% include tail.html %}

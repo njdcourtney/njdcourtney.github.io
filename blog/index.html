@@ -1,21 +1,49 @@
 ---
 layout: default
-title: Blog Index
+title: Blog Posts Index
 ---
 
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
+<div class="row">
+    
 <!-- This loops through the paginated posts -->
+{% assign loopindex = 0 %}
 {% for post in paginator.posts %}
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p>{{ post.excerpt }}</p>
+    {% assign loopindex = loopindex | plus: 1 %}
+
+    <div class="col-sm-6 col-lg-4">            
+        <div class="panel  panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            </div>
+            <div class="panel-body">
+                <p class="text-right">Posted on {{ post.date | date: '%B %-d, %Y' }}</p>
+                {{ post.excerpt }}
+                <p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
+            </div>
+        </div>            
+    </div>
+    {% assign rowfinder = loopindex | modulo: 2 %}
+    {% if rowfinder == 0 %}<div class="clearfix visible-sm-block visible-md-block"></div>{% endif %}
+    {% assign rowfinder = loopindex | modulo: 3 %}
+    {% if rowfinder == 0 %}<div class="clearfix visible-lg-block"></div>{% endif %}
+    
 {% endfor %}
+</div>            
+</div>
+</div>
+
+
 
 {% if paginator.total_pages > 1 %}
-<div class="text-center">
-    <ul class="pagination">
+<div class="row">
+<div class="col-sm-8 col-sm-offset-2 text-center">
+    <ul class="pagination pagination-lg">
     {% if paginator.previous_page %}
-        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="glyphicon glyphicon-step-backward"></span> </a></li>
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
     {% else %}
-        <li class="disabled"><span class="glyphicon glyphicon-step-backward"></span></li>
+        <li class="disabled"><a href="#">&laquo;</a></li>
     {% endif %}
     
     {% for page in (1..paginator.total_pages) %}
@@ -29,10 +57,11 @@ title: Blog Index
     {% endfor %}
     
     {% if paginator.next_page %}
-        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="glyphicon glyphicon-step-forward"></span> </a></li>
+        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
     {% else %}
-        <li class="disabled"><span class="glyphicon glyphicon-step-forward"></span></li>
+        <li class="disabled"><a href="#">&raquo;</a></li>
     {% endif %}
     </ul>
+</div>
 </div>
 {% endif %}

@@ -2,8 +2,8 @@ theme: spacelab
 markdown: redcarpet
 pygments: true
 
-recent_limit: 10
-paginate: 10
+recent_limit: 8
+paginate: 12
 paginate_path: "blog/page:num"
 
 title: Nathan Courtney

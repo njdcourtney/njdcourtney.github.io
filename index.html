@@ -1,23 +1,27 @@
 ---
 layout: default
-title: Nathan's Homepage.
+title: Nathan Courtney
 ---
 
 <div class="row">
-    <div class="col-sm-6">
-        <h2>About this site</h2>    
+
+    <div class="col-sm-5 col-sm-offset-1">
+        <h2 class="text-center text-primary">About</h2>    
+        <p>I'm a network engineer at the University of Leeds, role-player and general run of the mill geek. Former Astrophysicist.</p>
         <p>The main reason for starting this site and it's blog is that I got fed up of posting things on various sites and then not being able to find them again. I'm a Unix geek, if I can't grep it it's no use to me...</p>
     </div>
-    <div class="col-sm-6">
-        <h2>About Me</h2>    
-        <p>I'm a network engineer at the University of Leeds, role-player and general run of the mill geek. Former Astrophysicist.</p>
-    </div>
+    
+    <div class="col-sm-5">
+        {% include recent-posts.html %}
+	</div>
+        
 </div>
+
 <div class="row">
-    <div class="col-sm-12">
-    <h2>Digital footprint</h2>    
+    <div class="col-sm-5 col-sm-offset-1">
+    <h2 class="text-center text-primary">Elsewhere</h2>    
     <p>Like everybody else in the online world, I have a huge digital footprint. My biggest marks in the sand are:</p>
-    <ul class="list-inline">
+    <ul>
         <li><a href="http://www.linkedin.com/in/njdcourtney">Linkedin</a></li>
         <li><a href="https://www.facebook.com/nathan.courtney">Facebook</a></li>
         <li><a href="https://twitter.com/njdcourtney">Twitter</a></li>
@@ -26,11 +30,9 @@ title: Nathan's Homepage.
         <li><a href="https://github.com/njdcourtney">Github</a></li>
     </ul>
     </div>
-</div>
-    
-<div class="row">
-    <div class="col-sm-12">
-        <h2>Credits</h2>    
+
+    <div class="col-sm-5">
+        <h2 class="text-center text-primary">Credits</h2>    
         <p>I'm a big fan of open-source software and I like to give credit where it's due.</p>
         <p>This site is built using <a href="http://jekyllrb.com/">Jekyll</a>, a static web page generator.</p>
         <p>The layout is based on <a href="http://getbootstrap.com/">Bootstrap</a> and uses the {{ site.theme }} theme from <a href="http://bootswatch.com/">Bootswatch</a>, kindly delivered by the guys at <a href="http://www.bootstrapcdn.com/">MaxCDN</a></p>
@@ -38,4 +40,5 @@ title: Nathan's Homepage.
         <p>Isn't the world of open source lovely...</p>
     </div>
 </div>
+
 
