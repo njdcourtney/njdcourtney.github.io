@@ -1,4 +1,4 @@
-<h2 class="text-center text-primary">Blog Posts <small><a href="/blog/"><i class="fa fa-list"></i></a> <a href="/rss.xml"><i class="fa fa-rss"></i></a></small></h2>
+<h2 class="text-center"><a href="/blog/" class="text-primary">Blog Posts</a> <a href="/rss.xml"><i class="fa fa-rss" style="color: #ff9900;"></i></a></h2>
 <ul class="fa-ul">
 	{% for post in (site.posts limit: site.recent_limit %}
         <li><i class="fa fa-book fa-li"></i><a href="{{ post.url }}">{{ post.title }}</a></li>
