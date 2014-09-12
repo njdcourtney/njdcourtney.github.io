@@ -4,36 +4,34 @@ title: Blog Posts Index
 ---
 
 <div class="row">
-<div class="col-sm-10 col-sm-offset-1">
-<div class="row">
-    
+
 <!-- This loops through the paginated posts -->
 {% assign loopindex = 0 %}
 {% for post in paginator.posts %}
-    {% assign loopindex = loopindex | plus: 1 %}
-
-    <div class="col-sm-6 col-lg-4">            
-        <div class="panel  panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            </div>
-            <div class="panel-body">
-                <p class="text-right">Posted on {{ post.date | date: '%B %-d, %Y' }}</p>
-                {{ post.excerpt }}
-                <p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
-            </div>
-        </div>            
-    </div>
-    {% assign rowfinder = loopindex | modulo: 2 %}
-    {% if rowfinder == 0 %}<div class="clearfix visible-sm-block visible-md-block"></div>{% endif %}
-    {% assign rowfinder = loopindex | modulo: 3 %}
-    {% if rowfinder == 0 %}<div class="clearfix visible-lg-block"></div>{% endif %}
-    
+        {% assign loopindex = loopindex | plus: 1 %}
+        <div class="col-sm-6 col-lg-4">            
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                </div>
+                <div class="panel-body">
+                    <p class="text-right">Posted on {{ post.date | date: '%B %-d, %Y' }}</p>
+                    <p>{{ post.excerpt }}</p>
+                    <p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
+                </div>
+            </div>            
+        </div>
+        {% assign rowfinder = loopindex | modulo: 2 %}
+        {% if rowfinder == 0 %}
+            <div class="clearfix visible-sm-block visible-md-block"></div>
+        {% endif %}
+        {% assign rowfinder = loopindex | modulo: 3 %}
+        {% if rowfinder == 0 %}
+            <div class="clearfix visible-lg-block"></div>
+        {% endif %}
 {% endfor %}
-</div>            
-</div>
-</div>
-
+    
+    </div>
 
 
 {% if paginator.total_pages > 1 %}
