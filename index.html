@@ -3,13 +3,31 @@ layout: default
 title: NathanCourtney.me.uk
 ---
 
-<div class="container-fluid">
-{% for post in (site.posts limit: site.recent_limit %}
-    
-	<h2><a class="h2" href="{{ post.url }}">{{ post.title }}</a></h2>
+<div class="row">
+	<div class="col-sm-6">
+		<h3 class="text-center text-primary">About</h3>    
+		<p>I'm a network engineer at the University of Leeds, role-player and general run of the mill geek. Former Astrophysicist.</p>		
+        <p>The main reason for starting this site and it's blog is that I got fed up of posting things on various sites and then not being able to find them again. I'm a Unix geek, if I can't grep it it's no use to me...</p>
+	</div>
+
+    <div class="col-sm-6">
+		<h3 class="text-center text-primary">Credits</h3>    
+        <p>I'm a big fan of open-source software and I like to give credit where it's due.</p>
+        <p>This site is built using <a href="http://jekyllrb.com/">Jekyll</a>, a static web page generator.</p>
+        <p>The layout is based on <a href="http://getbootstrap.com/">Bootstrap</a>, uses the {{ site.theme }} theme from <a href="http://bootswatch.com/">Bootswatch</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, kindly delivered by the guys at <a href="http://www.bootstrapcdn.com/">MaxCDN</a></p>
+        <p>The site itself is served using <a href="http://pages.github.com/">GitHub pages</a> and you can grab the source for this site from my <a href="https://github.com/njdcourtney/njdcourtney.github.io">GitHub repository</a>.</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="row">
+{% for post in (site.posts limit: 4 %}
+	<div class="col-sm-6">
+		<p class="text-center"><a class="h3 text-primary" href="{{ post.url }}">{{ post.title }}</a></p>
 		<p class="text-right">Posted on {{ post.date | date: '%B %-d, %Y' }}</p>
-        {{ post.excerpt }}
-        <p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
-	<hr>
+		<p>{{ post.excerpt }}</p>
+		<p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
+	</div>	
 {% endfor %}
 </div>
