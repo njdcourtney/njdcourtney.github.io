@@ -22,12 +22,18 @@ title: Nathan Courtney
 <hr>
 
 <div class="row">
+{% assign loopindex = 0 %}
 {% for post in (site.posts limit: 4 %}
+	{% assign loopindex = loopindex | plus: 1 %}
 	<div class="col-sm-6">
 		<p class="text-center"><a class="h3 text-primary" href="{{ post.url }}">{{ post.title }}</a></p>
 		<p class="text-right">Posted on {{ post.date | date: '%B %-d, %Y' }}</p>
 		<p>{{ post.excerpt }}</p>
 		<p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
-	</div>	
+	</div>
+	{% assign rowfinder = loopindex | modulo: 2 %}
+    {% if rowfinder == 0 %}
+        <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
+    {% endif %}
 {% endfor %}
 </div>
