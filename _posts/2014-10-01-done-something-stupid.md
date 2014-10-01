@@ -1,0 +1,16 @@
+---
+layout: blog
+title: I've done something stupid.
+tags: running, London Marathon
+
+---
+
+Have you ever done something really stupid, forgotten about it and then had it come back and slap you in the face.
+
+I have...
+
+<img class="img-responsive center-block" src="/img/2014-10-01-VLM.jpg">
+
+By my maths I've got 25 weeks worth of training to get through and there's 29 weeks until M-day, so there's just enough time so long as nothing goes wrong.
+
+Lets do this!
