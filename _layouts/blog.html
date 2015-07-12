@@ -5,8 +5,7 @@
 		{% include navbar.html %}
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8 col-sm-push-4">
-					<div class="float-right">{% include social-media.html %}</div>
+				<div class="col-sm-8">
 					<div class="page-header text-center">
 						<h1>{{ page.title }}</h1>
 					</div>
@@ -23,9 +22,10 @@
 					</ul>
 					{% include discus.html %}
 				</div>
-				<div class="col-sm-4 col-sm-pull-8">
+				<div class="col-sm-4">
 					<div class="well">{% include google-search.html %}</div>
 					<div class="well">{% include recent-posts.html %}</div>
+					<div class="well">{% include social-media.html %}</div>
 				</div>
 			</div>
 		{% include google_responsive.html %}
