@@ -5,8 +5,6 @@ tags: real life
 
 ---
 
-###So where have you been?
-
 You may have noticed that I haven't posted to this blog in a while, so what happened?
 
 [You'll recall from this post ]({% post_url 2014-10-01-done-something-stupid %}) that I'd got a place in the London Marathon. Well, it turns out that training for a marathon takes up a lot of time. A LOT of time. Runners even have a name for it, they call it paying the social debt; every minute you spend running is a minute you're not doing something else that you used to do, so some things have to give and sadly this blog was one of those things. Besides, my updates would've been something along the lines of:
