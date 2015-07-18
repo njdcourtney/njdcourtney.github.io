@@ -6,7 +6,7 @@ title : RSS Feed
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>{{ site.domain_name }}</title>
+        <title>Nathan Courtney's Blog</title>
         <description>{{ site.title }}</description>
         <link>{{ site.production_url }}{{ site.rss_path }}</link>
         <link>{{ site.production_url }}</link>
