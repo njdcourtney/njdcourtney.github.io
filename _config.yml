@@ -1,6 +1,5 @@
 theme: spacelab
 markdown: redcarpet
-pygments: true
 
 recent_limit: 8
 paginate: 12
