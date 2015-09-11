@@ -5,35 +5,12 @@ title: Nathan Courtney
 
 <h3 class="text-primary">About</h3>
 <p>I'm a Senior Network Engineer at <a href="http://www.callcredit.co.uk/">Call Credit Information Group</a>, boardgamer, role-player and general run of the mill geek. Former Astrophysicist.</p>
-
 <p>The main reason for starting this site and it's blog is that I got fed up of posting things on various sites and then not being able to find them again. I'm a Unix geek, if I can't grep it it's no use to me...</p>
 
 <hr>
 
 <h3 class="text-primary">Credits</h3>
-
 <p>I'm a big fan of open-source software and I like to give credit where it's due.</p>
 <p>This site is built using <a href="http://jekyllrb.com/">Jekyll</a>, a static web page generator.</p>
 <p>The layout is based on <a href="http://getbootstrap.com/">Bootstrap</a>, uses the {{ site.theme }} theme from <a href="http://bootswatch.com/">Bootswatch</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, kindly delivered by the guys at <a href="http://www.bootstrapcdn.com/">MaxCDN</a></p>
 <p>The site itself is served using <a href="http://pages.github.com/">GitHub pages</a> and you can grab the source for this site from my <a href="https://github.com/njdcourtney/njdcourtney.github.io">GitHub repository</a>.</p>
-
-<hr>
-
-<h3 class="text-primary">Recent Posts</h3>
-
-<div class="row">
-{% assign loopindex = 0 %}
-{% for post in (site.posts limit: 4 %}
-	{% assign loopindex = loopindex | plus: 1 %}
-	<div class="col-sm-6">
-		<p class=><a class="h4 text-primary" href="{{ post.url }}">{{ post.title }}</a></p>
-		<p class="text-right">Posted on {{ post.date | date: '%B %-d, %Y' }}</p>
-		<p>{{ post.excerpt }}</p>
-		<p class="text-right">(<a href="{{ post.url }}">Read more...</a>)</p>
-	</div>
-	{% assign rowfinder = loopindex | modulo: 2 %}
-    {% if rowfinder == 0 %}
-        <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
-    {% endif %}
-{% endfor %}
-</div>

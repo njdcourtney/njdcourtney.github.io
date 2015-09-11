@@ -9,6 +9,10 @@
 					<div class="lead text-center">
 						<h1>{{ page.title }}</h1>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
 					<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
 					<div class="container-fluid">{{ content }}</div>
 
@@ -29,7 +33,6 @@
 				</div>
 			</div>
 		</div><!--/.container -->
-		{% include google-analytics.html %}
 		{% include tail.html %}
     </body>
 </html>
