@@ -5,7 +5,7 @@ recent_limit: 8
 paginate: 12
 paginate_path: "blog/page:num"
 
-title: Nathan Courtney
+title: NathanCourtney.me.uk
 domain_name: www.nathancourtney.me.uk
 production_url : http://www.nathancourtney.me.uk
 rss_path : /rss.xml

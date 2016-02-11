@@ -5,14 +5,14 @@
 		{% include navbar.html %}
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-8">
+				<div class="col-sm-9">
 					<div class="lead text-center">
 						<h1>{{ page.title }}</h1>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-8">
+				<div class="col-sm-9">
 					<p class="text-right">Posted on {{ page.date | date: '%B %-d, %Y' }}</p>
 					<div class="container-fluid">{{ content }}</div>
 
@@ -26,9 +26,9 @@
 					</ul>
 					{% include discus.html %}
 				</div>
-				<div class="col-sm-4">
-					<div class="well">{% include recent-posts.html %}</div>
-					<div class="well">{% include social-media.html %}</div>
+				<div class="col-sm-3">
+					<div>{% include recent-posts.html %}</div>
+					<div>{% include social-media.html %}</div>
 					<div>{% include google_responsive.html %}</div>
 				</div>
 			</div>
