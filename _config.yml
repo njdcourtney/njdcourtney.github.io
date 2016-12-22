@@ -1,5 +1,6 @@
 theme: spacelab
 markdown: kramdown
+gems: [jekyll-paginate]
 
 recent_limit: 8
 paginate: 12
