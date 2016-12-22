@@ -5,7 +5,7 @@ tags: Astronomy, Physics
 
 ---
 
-There's a HUGE bit of news today, an international team have announced that they've discovered gravitational waves: [http://www.bbc.co.uk/news/science-environment-35524440]([http://www.bbc.co.uk/news/science-environment-35524440])
+There's a HUGE bit of news today, an international team have announced that they've discovered gravitational waves: [http://www.bbc.co.uk/news/science-environment-35524440](http://www.bbc.co.uk/news/science-environment-35524440)
 
 [<img class="img-responsive center-block" src="/img/2016-02-11-grav-waves.jpg">](http://spaceplace.nasa.gov/review/lisa-g-waves/)
 
