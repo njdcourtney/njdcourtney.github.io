@@ -9,7 +9,7 @@ The Raspberry pi [https://www.raspberrypi.org/] makes a great headless server si
 
 However it turns out to be relatively simple to enable WiFi and get them connected to wifi right from first boot. For this I was using a Raspberry Pi 3B Plus and Rasbian Stretch Lite.
 
-#### Step one -  Download latest Raspian
+### Step one -  Download latest Raspian
 
 First you'll need a copy of Rasbian from the official downloads page [https://www.raspberrypi.org/downloads/]. The whole point of this article is setting up a headless server, so Im using the Lite version. Don't copy the image to the SD card just yet, we need to make some change first.
 
