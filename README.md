@@ -3,4 +3,4 @@ njdcourtney.github.io
 
 A repository to hold my personal website
 
-See it properly here: <http://www.nathancourtney.me.uk>
+See it properly here: <https://www.nathancourtney.me.uk>

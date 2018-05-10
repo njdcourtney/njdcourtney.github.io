@@ -44,7 +44,7 @@ If everything's gone to plan your Pi should boot and connect to your wireless ne
 
 Don't forget this step.
 
-Leaving your wifi password lying around in plain text isn't a very good idea. Luckily once you've got a working Pi you can use the 'wpa_passphrase' tool to hash your wifi password. There are great instructions on how to do this here on the [raspberry pi website](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md). 
+Leaving your wifi password lying around in plain text isn't a very good idea. Luckily once you've got a working Pi you can use the 'wpa_passphrase' tool to hash your wifi password. There are great instructions on how to do this here on the raspberry pi website <https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md>. 
 
 Once you've got a properly working wpa_supplicant.conf file, you can copy it off your pi to use it if you ever need to set up another one.
 
