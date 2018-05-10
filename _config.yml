@@ -1,5 +1,5 @@
 markdown: kramdown
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 recent_limit: 8
 paginate: 12
