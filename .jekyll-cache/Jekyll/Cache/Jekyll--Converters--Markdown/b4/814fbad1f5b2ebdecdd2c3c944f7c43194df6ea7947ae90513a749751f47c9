@@ -1,0 +1,23 @@
+I"g<p>Like any respectable geek I have a number of domain names, this one for example, and a few others I maintain for friends and family.</p>
+
+<p>For many years I’ve used <a href="http://www.zoneedit.com/">ZoneEdit</a> for DNS for all these domains and in general it’s been a reliable service. As well as normal static A and PRT records, they offer a dynamic DNS service that I’ve kept updated using <a href="http://sourceforge.net/projects/ddclient/">ddclient</a></p>
+
+<p>Recently however I’ve been unable to get ddclient to work. I’m using the same configuration that I’ve been using for years but something’s changed somewhere and now it just silently refuses to update. It’s open source Perl code so I could always go fishing about in its guts to find out what’s going wrong, but I have an easier solution.</p>
+
+<p>In <a href="http://www.zoneedit.com/faq.html">their FAQ</a>, ZoneEdit suggest a simple incantation to update dynamic DNS using wget.</p>
+
+<p>One quick Bash script:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+username='service-username'
+password='service-password'
+names='name1.example.com,name2.example.com'
+logfile='zoneedit.log'
+
+/bin/date &gt; $logfile
+/usr/bin/wget --quiet -O - --http-user=$username --http-passwd=$password 'https://dynamic.zoneedit.com/auth/dynamic.html?host='$names &gt;&gt; $logfile```
+</code></pre></div></div>
+
+<p>and a crontab entry and I have a working dynamic DNS, a log file that shows me the date and result of the last update and one less root privileged demon process running on my server.</p>
+:ET
