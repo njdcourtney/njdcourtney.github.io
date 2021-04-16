@@ -1,0 +1,33 @@
+I"ò<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+        google.charts.load('current', {'packages':['timeline']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+    dataTable.addColumn({ type: 'string', id: 'Type' });
+    dataTable.addColumn({ type: 'string', id: 'Name' });
+    dataTable.addColumn({ type: 'date', id: 'Start' });
+    dataTable.addColumn({ type: 'date', id: 'End' });
+    dataTable.addRows([
+      [ 'Life', '2nd Child', new Date(1491, 5, 28), new Date(1502, 3, 1) ],
+      [ 'Life', 'Heir', new Date(1502, 3, 2), new Date(1509, 3, 21) ],
+      [ 'Life', 'King', new Date(1509, 3, 22), new Date(1547, 0, 28) ],
+      [ 'Wife', 'Catherine of Aragon', new Date(1509, 5, 11), new Date(1533, 4, 23) ],
+      [ 'Wife', 'Anne Boleyn', new Date(1533, 4, 28), new Date(1536, 4, 17) ],
+      [ 'Wife', 'Jane Seymour', new Date(1536, 4, 30), new Date(1537, 9, 24) ],
+
+      [ 'Wife', 'Anne of Cleves', new Date(1509, 5, 11), new Date(1533, 4, 23) ],
+      [ 'Wife', 'Catherine Howard', new Date(1533, 4, 28), new Date(1536, 4, 17) ],
+      [ 'Wife', 'Catherine Parr', new Date(1536, 4, 30), new Date(1537, 9, 24) ],
+      ]);
+
+    chart.draw(dataTable);
+}
+</script>
+
+<div id="timeline" style="height: 180px;"></div>
+:ET
