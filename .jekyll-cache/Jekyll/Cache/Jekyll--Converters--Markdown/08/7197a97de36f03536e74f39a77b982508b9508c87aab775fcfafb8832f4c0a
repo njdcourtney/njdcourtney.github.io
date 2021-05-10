@@ -1,2 +1,0 @@
-I"<p>The <a href="https://www.raspberrypi.org/">Raspberry pi</a> makes a great headless server sitting tucked away in a corner somewhere quietly getting on with its job. However, thanks to SSH being disabled by default in Rasbian and wifi pre-shared keys being a thing, I’ve often found myself having to break out a network and HDMI cable to get access to my Pis to set them up.</p>
-:ET

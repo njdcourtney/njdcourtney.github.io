@@ -1,7 +1,3 @@
 #Ignore the locally generated site
 _site/
-_drafts/
-
-#Ignore the RVM ruby version switching instructions as these are machine specific
-.ruby-gemset
-.ruby-version
+.jekyll-cache
