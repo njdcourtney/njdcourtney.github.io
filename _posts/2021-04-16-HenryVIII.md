@@ -44,6 +44,6 @@ tags: history
 
 So we've started rewatching [The Tudors.](https://www.imdb.com/title/tt0758790/) Don't judge, it's been a long lockdown. Anyway, I've been meaning to do this for a while, put together a visual timeline of the life of King Henry VIII
 
-<div id="timeline" style="border: 1px solid red; height: 30em;"></div>
+<div id="timeline" style="height: 30em;"></div>
 
 It always surprises me how long he was married to Catherine of Aragon for and how everything goes to pieces towards the end of his reign!
